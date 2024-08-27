@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apiGateway-service
+spec:
+  selector:
+    app: apiGateway
+  ports:
+    - protocol: TCP
+      port: 9090
+      targetPort: 9092
+      nodePort: 30001
+  type: NodePort
