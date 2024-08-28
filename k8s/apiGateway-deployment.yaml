@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apiGateway-deployment
+  name: apigateway-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: apiGateway
+      app: apigateway
   template:
     metadata:
       labels:
-        app: apiGateway
+        app: apigateway
     spec:
       containers:
-      - name: apiGateway
-        image: qiuer0121/apiGateway:latest
+      - name: apigateway
+        image: qiuer0121/apigateway:latest
         ports:
         - containerPort: 9092
 
