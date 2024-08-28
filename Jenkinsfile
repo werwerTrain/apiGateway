@@ -57,6 +57,7 @@ pipeline {
                 bat '''
                 kubectl apply -f k8s/apiGateway-deployment.yaml
                 kubectl apply -f k8s/apiGateway-service.yaml
+                kubectl apply -f k8s/apiGateway-hpa.yaml
                 '''
                 echo '部署成功'
             }
