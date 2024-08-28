@@ -22,11 +22,5 @@ spec:
         image: qiuer0121/apiGateway:latest
         ports:
         - containerPort: 9092
-        resources: 
-          limits: 
-            cpu: 800m 
-            memory: 5Gi 
-          requests:  
-            cpu: 50m
-            memory: 100Mi
+
 
