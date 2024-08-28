@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wwTrain-deployment
+  name: apiGateway-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wwTrain
+      app: apiGateway
   template:
     metadata:
       labels:
-        app: wwTrain
+        app: apiGateway
     spec:
       containers:
-      - name: wwTrain
-        image: qiuer0121/wwTrain:latest
+      - name: apiGateway
+        image: qiuer0121/apiGateway:latest
         ports:
         - containerPort: 9092
 
