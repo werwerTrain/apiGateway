@@ -7,7 +7,7 @@ spec:
     app: apiGateway
   ports:
     - protocol: TCP
-      port: 9090
+      port: 9092
       targetPort: 9092
-      nodePort: 30001
+      nodePort: 30012
   type: NodePort
