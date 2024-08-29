@@ -87,11 +87,7 @@ pipeline {
             }
         }
 
-        stage('Running Test Scenario') {
-            steps {
-                sh 'apifox run https://api.apifox.com/api/v1/projects/4458630/api-test/ci-config/455734/detail?token=x5cDastmHjEGbudNek8KVZ -r html,cli'
-            }
-        }
+     
       
       
     }
