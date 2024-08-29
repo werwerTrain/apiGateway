@@ -22,5 +22,8 @@ spec:
         image: bxr0820/apigateway:latest
         ports:
         - containerPort: 9092
-
-
+        resources:
+          requests:
+            cpu: "50m"  # 请求的 CPU 资源
+          limits:
+            cpu: "1000m"  # CPU 使用的最大限制
