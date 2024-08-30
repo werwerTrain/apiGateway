@@ -87,31 +87,17 @@ pipeline {
             }
         }
 
-        stage('Running Test Scenario1') {
+        stage('Running Test Scenario') {
             steps {
                 sh 'apifox run https://api.apifox.com/api/v1/projects/4458630/api-test/ci-config/456011/detail?token=xAYRZPmAlElIBL18DUEQdU -r html,cli'
-            }
-        }
-        stage('Running Test Scenario2') {
-            steps {
                 sh 'apifox run https://api.apifox.com/api/v1/projects/4458630/api-test/ci-config/456012/detail?token=x3ig2YTkXJ3deIZrd59Nhe -r html,cli'
-            }
-        }
-        stage('Running Test Scenario3') {
-            steps {
-                sh 'apifox run https://api.apifox.com/api/v1/projects/4458630/api-test/ci-config/456013/detail?token=xiM2WMiZrVA9oubkH7U7zu -r html,cli'
-            }
-        }
-        stage('Running Test Scenario4') {
-            steps {
                 sh 'apifox run https://api.apifox.com/api/v1/projects/4458630/api-test/ci-config/456014/detail?token=xKw4BSGFC1d7DbAnJk9_oG -r html,cli'
-            }
-        }
-        stage('Running Test Scenario5') {
-            steps {
                 sh 'apifox run https://api.apifox.com/api/v1/projects/4458630/api-test/ci-config/456016/detail?token=x5LK-4L2mUo7iCVE7a4Fo4 -r html,cli'
+
+
             }
         }
+        
       
       
     }
